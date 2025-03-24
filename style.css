@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+h1 {
+    font-size: 16em;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+h1.visible {
+    opacity: 1;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}

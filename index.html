@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guttahelse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="placeholder">
+        <h1 id="title">Guttahelse</h1>
+        <h6 id="subtitle">Her kommer det noe snart!</h6>
+        <h6 id="contact"contact>For kontakt: <a href="mailto:kreativsuper@icloud.com">   
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById('title').classList.add('visible');
+                document.getElementById('subtitle').classList.add('visible');
+                document.getElementById('contact').classList.add('visible');
+
+            }, 500);
+        });
+    </script>
+</body>
+</html>
