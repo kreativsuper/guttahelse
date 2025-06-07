@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>guttahelse</title>
+    
+    <title>guttahelse - Helse, Livsstil og Råd for gutta</title>
+    <meta name="description" content="guttahelse er en plattform dedikert til helse, livsstil og mentalt velvære for gutta. Les artikler, få råd og finn inspirasjon.">
+    
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Website",
+      "name": "Guttahelse",
+      "url": "https://guttahelse.no",
+      "description": "En plattform om helse og livsstil for gutta.",
+      "inLanguage": "no"
+    }
+    </script>
 </head>
 <body>
     <div class="placeholder">
         <h1 id="title">guttahelse</h1>
-        <h6 id="subtitle">Her kommer det noe snart</h6>
-        <h6 id="contact">For kontakt: <a href="mailto:kreativsuper@icloud.com">Send epost</a></h6>
     </div>
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
                 document.getElementById('title').classList.add('visible');
-                document.getElementById('subtitle').classList.add('visible');
-                document.getElementById('contact').classList.add('visible');
             }, 500);
         });
     </script>
