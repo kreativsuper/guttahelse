@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>guttahelse - Helse, Livsstil og Råd for gutta</title>
     <meta name="description" content="guttahelse er en plattform dedikert til helse, livsstil og mentalt velvære for gutta. Les artikler, få råd og finn inspirasjon.">
-    
     <link rel="stylesheet" href="style.css">
-
     <!-- Structured data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -24,12 +21,26 @@
 <body>
     <div class="placeholder">
         <h1 id="title">guttahelse</h1>
+        <div class="rules">
+            <p class="rule">Planlegg for minst 8-9 timer søvn hver natt</p>
+            <p class="rule">Tren hver eneste dag</p>
+            <p class="rule">Spis aldri godteri / snacks. Nyt en sjelden dessert.</p>
+            <p class="rule">Vedlikehold sosiale relasjoner</p>
+            <p class="rule">Unngå alkohol og tobakk</p>
+            <p class="rule">Du skal ikke ha forbruksgjeld</p>
+            <p class="rule">Kle deg pent når du er ute</p>
+            <p class="rule">Bli god i noe</p>
+        </div>
     </div>
-    
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
                 document.getElementById('title').classList.add('visible');
+                document.querySelectorAll('.rule').forEach(function(p, i) {
+                    setTimeout(function() {
+                        p.classList.add('visible');
+                    }, 800 * (i + 1)); // stagger fade-in
+                });
             }, 500);
         });
     </script>
